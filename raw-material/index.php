@@ -3,8 +3,8 @@ include '../model/RawMaterial.php';
 include '../config/auth.php';
 include '../config/supervisor.php';
 
-....
-....
+$db = new Product(); #ngideRayhan
+$products = $db->allProduct();
 ?>
 
 <!DOCTYPE html>
@@ -38,10 +38,10 @@ include '../config/supervisor.php';
                     Data succesfully edited.
                 </div>
 
-            ....
-                ....
-                    ....
-                ....
+             <?php } elseif ($_GET['message'] == "delete-success") { ?>
+                <div class="alert alert-success" role="alert">
+                    Data succesfully deleted.
+                </div>
 
         <?php }
         } ?>

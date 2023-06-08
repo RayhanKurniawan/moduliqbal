@@ -3,8 +3,8 @@ include '../model/RawMaterial.php';
 include '../config/auth.php';
 include '../config/supervisor.php';
 
-....
-....
+$db = new Product(); #ngideRayhan
+$products = $db->allProduct();
 ?>
 <!DOCTYPE html>
 <html lang="en">

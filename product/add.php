@@ -1,10 +1,10 @@
 <?php
-....
-....
-....
+include '../model/Product.php';
+include '../config/auth.php';
+include '../config/supervisor.php';
 
-....
-....
+$product = new Product(); #ngideRayhan
+// $products = $db->allProduct();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +20,7 @@
 
 <body>
     <div class="container-fluid p-5 bg-blue text-white text-center">
-        <h1>Espresso Company</h1>
+        <h1>Hair Drayer 4 in 1 Company</h1>
         <p>Production Information System</p>
     </div>
     <?php include('../navigation/index.php') ?>

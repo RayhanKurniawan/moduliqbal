@@ -8,7 +8,7 @@ include '../config/auth.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hair Drayer 4 in 1 Company Company</title>
+    <title>FRI - 130 Corporation</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
 </head>
@@ -16,7 +16,7 @@ include '../config/auth.php';
 
 <body>
     <div class="container-fluid p-5 bg-primary text-white text-center">
-        <h1>Hair Drayer 4 in 1 Company Company</h1>
+        <h1>FRI - 130 Corporation</h1>
         <p>Production Information System</p>
     </div>
     <?php include('../navigation/index.php') ?>
@@ -33,13 +33,14 @@ include '../config/auth.php';
 
         <div class="row justify-content-center ">
             <div class="col-lg-3">
-                <img src="../images/espresso machine.png" class="img-thumbnail">
+                <img src="../images/HandDryer.jpg" class="img-thumbnail">
             </div>
             <div class="col-lg-5">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Hair Drayer 4 in 1 Company</h5>
-                        <p class="card-text">A company that manufactures espresso machine called "Espine Alpha". Espine Alpha is a 52-part machine production in 5 workstations that can make espresso-based coffee using a portafiller.</p>
+                        <h5 class="card-title">FRI - 130 Corporation</h5>
+                        <p class="card-text">FRI - 130 Corporation merupakan perusahaan yang bergerak dibidang sanitary yang memproduksi hand dryer, yaitu HD4in1.
+                            <br><br>HD4in1 memiliki fungsi utama yaitu untuk mengeringkan tangan. HD4in1 memiliki 4 fungsi sekaligus diantaranya yaitu hand dryer, tempat hand sanitizer, tempat sabun cuci tangan dan tempat tissue, sehingga customers dapat mencuci dan mengeringkan tangannya sesuai dengan cara masing-masing.</p>
                     </div>
                 </div>
             </div>

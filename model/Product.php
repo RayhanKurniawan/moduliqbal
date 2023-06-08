@@ -39,6 +39,11 @@ class Product extends Database
 		$query = mysqli_query($this->connection, "UPDATE product SET qty=$qty,name='$name',cogs=$cogs,selling_price=$sp WHERE id=$id ");
 	}
 
+	function sendProduct($id, $qty)
+    {
+        $query = mysqli_query($this->connection, "UPDATE product SET qty=qty-$qty WHERE id=$id");
+    }
+
 	function deleteProduct($id)
 	{
 		$query = mysqli_query($this->connection, "DELETE FROM product WHERE id=$id ");

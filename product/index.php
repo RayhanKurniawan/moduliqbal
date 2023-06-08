@@ -1,10 +1,10 @@
 <?php
-....
-....
-....
+include '../model/Product.php'; #ngideRayhan
+include '../config/auth.php';
+include '../config/supervisor.php';
 
-....
-....
+$db = new Product(); #ngideRayhan
+$products = $db->allProduct();
 ?>
 
 <!DOCTYPE html>
@@ -39,10 +39,10 @@
                         Data succesfully edited.
                     </div>
 
-                ....
-                    ....
-                        ....
-                    ....
+                <?php } elseif ($_GET['message'] == "delete-success") /* ngideRayhan */{ ?>
+                    <div class="alert alert-success" role="alert">
+                        Data succesfully deleted.
+                    </div>
 
             <?php }
             } ?>

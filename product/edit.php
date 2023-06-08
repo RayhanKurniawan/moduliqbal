@@ -3,8 +3,8 @@ include '../model/Product.php';
 include '../config/auth.php';
 include '../config/supervisor.php';
 
-....
-....
+$db = new Product(); #ngideRayhan
+$product = $db->getProduct($_GET['id']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
