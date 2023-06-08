@@ -3,8 +3,8 @@ include '../model/Product.php';
 include '../config/auth.php';
 include '../config/supervisor.php';
 
-$product = new Product(); #ngideRayhan
-// $products = $db->allProduct();
+$db = new Product(); #ngideRayhan
+$products = $db->allProduct();
 ?>
 <!DOCTYPE html>
 <html lang="en">
