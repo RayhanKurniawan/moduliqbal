@@ -1,0 +1,12 @@
+.bg-blue {
+    background-color: #3ad7cd;
+}
+
+.bg-green {
+    background-color: #2C6965;
+}
+
+.card.espresso{
+    width: 225px ;
+    height: 300px ;
+}
