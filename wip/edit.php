@@ -4,7 +4,7 @@ include '../config/auth.php';
 include '../config/supervisor.php';
 
 $db = new WIP(); #ngideRayhan
-$bom = $db->getWIPDetail($_GET['id']);
+$wip = $db->getWIP($_GET['id']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +19,7 @@ $bom = $db->getWIPDetail($_GET['id']);
 </head>
 
 <body>
-    <div class="container-fluid p-5 bg-blue text-white text-center">
+    <div class="container-fluid p-5 bg-primary text-white text-center">
         <h1>Espresso Company</h1>
         <p>Production Information System</p>
     </div>

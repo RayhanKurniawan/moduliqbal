@@ -46,22 +46,22 @@ include '../config/auth.php';
             </div>
         </div>
     </div>
-    <style>
-        .sticky-footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            padding: 10px;
-            background-color: #007bff; 
-            color: #ffffff; 
-            text-align: center;
-        }
-    </style>
-    <div class="mt-3 p-3 sticky-footer">
+    <div class="mt-3 p-3 footer">
         <p>&copy FRI - 130</p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
+<style>
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff; 
+        color: #ffffff; 
+        text-align: center;
+    }
+</style>

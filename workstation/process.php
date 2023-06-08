@@ -10,13 +10,14 @@ $product = new Product();
 $action = $_GET['action'];
 if ($action == 'raw-material-arrival') {
 
-    ....
+    $rawMaterial->addRawMaterial($_POST['id'], $_POST['qty']); //ngide
+    $rawMaterial->insertRawMaterialLog($_POST['id'], $_POST['qty'], $_SESSION['name'], $_SESSION['ws'], '', 'arrival');
 
     header("location:raw-material-arrival.php?message=success");
 } elseif ($action == 'wip-arrival') {
 
-    ....
-    ....
+    $wip->addWIP($_POST['id'], $_POST['qty']);  //ngide
+    $wip->insertWIPLog($_POST['id'], $_POST['qty'], $_SESSION['name'], $_SESSION['ws'], '', 'arrival');
 
     header("location:wip-arrival.php?message=success");
 } elseif ($action == 'wip-finished') {

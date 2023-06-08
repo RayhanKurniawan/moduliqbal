@@ -20,7 +20,7 @@ $wip = $db->getWIP($_GET['id']);
 </head>
 
 <body>
-    <div class="container-fluid p-5 bg-blue text-white text-centerr">
+    <div class="container-fluid p-5 bg-primary text-white text-centerr">
         <h1>Espresso Company</h1>
         <p>Production Information System</p>
     </div>
@@ -78,10 +78,23 @@ $wip = $db->getWIP($_GET['id']);
             </div>
         </div>
     </div>
-    <div class="mt-4 p-3 bg-green text-white text-center">
+    <div class="mt-4 p-3 bg-primary footer">
         <p>&copy 2023 RYP x Ensyse Laboratory</p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
+
+<style>
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff; 
+        color: #ffffff; 
+        text-align: center;
+    }
+</style>
