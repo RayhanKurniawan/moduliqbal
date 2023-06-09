@@ -54,12 +54,12 @@ $products = $db->allProduct();
                                 <label for="exampleInputEmail1" class="form-label">Report Date</label>
                                 <div class="row">
                                     <div class="col-6">
-                                        <input type="text" name ="start" class="from-control" placeholder="mm/dd/yyyy">
-                                        <div id="emailHelp"class="from-text">Select the start date.</div>
+                                        <input type="date" name="start" class="form-control" placeholder="mm/dd/yyyy">
+                                        <div id="emailHelp" class="form-text">Select the start date.</div>
                                     </div>
                                     <div class="col-6">
-                                        <input type="text" name ="end" class="from-control" placeholder="mm/dd/yyyy">
-                                        <div id="emailHelp"class="from-text">Select the end date.</div>
+                                        <input type="date" name="end" class="form-control" placeholder="mm/dd/yyyy">
+                                        <div id="emailHelp" class="form-text">Select the end date.</div>
                                     </div>
                                 </div>
                             </div>

@@ -19,12 +19,12 @@ if ($action == 'login') {
         $_SESSION['ws'] = $user['workstation'];
         header("location:../index.php");
     } else {
-        header("location:index.php?message=failed");
+        header("location:index.php?pesan=failed");
     }
 } elseif ($action == 'logout') {
     session_start();
     session_destroy();
-    header("location:../index.php?message=logout");
+    header("location:../index.php?pesan=logout");
 } else {
-    header("location:index.php?message=failed");
+    header("location:index.php?pesan=failed");
 }

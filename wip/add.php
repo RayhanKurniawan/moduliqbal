@@ -19,7 +19,7 @@ $wips = $db->allWIP();
 </head>
 
 <body>
-    <div class="container-fluid p-5 bg-blue text-white text-center">
+    <div class="container-fluid p-5 bg-primary text-white text-center">
         <h1>Espresso Company</h1>
         <p>Production Information System</p>
     </div>

@@ -24,8 +24,8 @@ $product_value = $product->totalProductValues();
     <link rel="stylesheet" href="../style.css">
 </head>
 
-<body>
-    <div class="container-fluid p-5 bg-primary text-white text-center">
+<body class="scroll">
+    <div class="container-fluid p-3 header bg-primary text-white text-center">
         <h1>Espresso Company</h1>
         <p>Production Information System</p>
     </div>
@@ -156,6 +156,12 @@ $product_value = $product->totalProductValues();
 </html>
 
 <style>
+    .header{
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
     .footer {
         position: fixed;
         bottom: 0;
@@ -165,5 +171,13 @@ $product_value = $product->totalProductValues();
         background-color: #007bff; 
         color: #ffffff; 
         text-align: center;
+    }
+    .scroll {
+        overflow-y: scroll;
+        height: calc(150vh - 250px); /* Ubah tinggi sesuai kebutuhan Anda */
+    }
+
+    .container {
+        margin-bottom: 100px; /* Ubah margin sesuai kebutuhan Anda */
     }
 </style>

@@ -81,7 +81,11 @@ class Product extends Database
 
 		$sum = mysqli_num_rows($data2);
 		$product = mysqli_fetch_row($data);
-		return $product[0] / $sum;
+		if ($sum != 0) {
+			return $product[0] / $sum;
+		} else {
+			return 0;
+		}
 	}
 
 	function WIPRate($id, $start, $end)
@@ -94,8 +98,12 @@ class Product extends Database
 
 		$product = mysqli_fetch_row($data);
 		$wip = mysqli_fetch_row($data2);
-		$rate = $product[0] / $wip[0];
-		return $rate;
+		if ($wip[0] != 0) {
+			$rate = $product[0] / $wip[0];
+			return $rate;
+		} else {
+			return 0;
+		}
 	}
 
 	function productDefect($id, $start, $end)

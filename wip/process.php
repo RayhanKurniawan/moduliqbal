@@ -17,8 +17,8 @@ if ($action == 'add') { //NGIDE
     $db->editWIP($_POST['id'], $_POST['name'], $_POST['qty']);
     header("location:index.php?message=edit-success");
 } elseif ($action == 'delete') {
-    $db->deleteWIPDetail($_GET['id']);
-    header("location:detail.php?id=" . $_GET['wip'] . "&message=delete-success");
+    $db->deleteWIP($_GET['id']);
+    header("location:index.php?id=" . $_GET['wip'] . "&message=delete-success");
 } elseif ($action == 'delete-bom') {
     $db->deleteWIPDetail($_GET['id']);
     header("location:detail.php?id=" . $_GET['wip'] . "&message=delete-success");
