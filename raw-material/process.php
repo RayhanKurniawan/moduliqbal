@@ -16,7 +16,7 @@ if ($action == 'add') {
 } elseif ($action == 'edit') {
     $id = $_POST['id'];
     $name = $_POST['name'];
-    $qty = $_POST['qty'];
+    $qty = $_POST['qty']; 
     $price = $_POST['sp'];
 
     $db->editRawMaterial($id, $name, $qty, $price);

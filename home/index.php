@@ -17,7 +17,7 @@ include '../config/auth.php';
 <body>
     <div class="container-fluid p-5 bg-primary text-white text-center">
         <h1>FRI - 130 Corporation</h1>
-        <p>Production Information System</p>
+        <p>Hair Drayer 4 in 1</p>
     </div>
     <?php include('../navigation/index.php') ?>
     <div class="container mt-3 p-5">
